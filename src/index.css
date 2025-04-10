@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light, dark;
+}
+
+
+.grid-template {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 1fr 10vh;
+}
+
+.area-header {
+  grid-area: header;
+}
+.area-main {
+  grid-area: main;
+}
+.area-footer {
+  grid-area: footer;
+}
