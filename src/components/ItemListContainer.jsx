@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function ItemListContainer({ greeting }) {
-    const { categoryId } = useParams(); // lee el parámetro de la URL
+    const { categoryId } = useParams(); 
     const [productos, setProductos] = useState([]);
 
   // Simulación de async-mock
@@ -16,7 +16,7 @@ export default function ItemListContainer({ greeting }) {
     { id: '5', name: 'Remera Nike', category: 'remeras' }
     ];
 
-    // Simulamos carga con setTimeout
+    // Simulacion carga con setTimeout
     setTimeout(() => {
     const filtered = categoryId
         ? allProducts.filter(p => p.category === categoryId)

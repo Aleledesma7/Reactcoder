@@ -14,7 +14,7 @@ useEffect(() => {
     { id: '5', name: 'Remera Nike', category: 'remeras', description: 'Remera técnica ideal para entrenamiento.' }
     ];
 
-    // Simula una llamada asincrónica
+    // Simula llamada acincronica
     setTimeout(() => {
     const found = allProducts.find(prod => prod.id === itemId);
     setItem(found || null);
