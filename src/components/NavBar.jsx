@@ -8,10 +8,10 @@ export default function NavBar({ title, currentTheme, onChangeTheme }) {
 const classNameInvert = `w-10 h-10 ${currentTheme === "dark" ? "invert" : ""}`;
 
 return (
-    <div className="bg-base-100 flex items-center justify-between px-4 area-header border-b-2 border-b-base-300 shadow-md">
+    <div className="bg-base-100 sticky top-0 z-50 shadow-md border-b border-base-300 px-6 py-2 flex items-center justify-between">
     
       {/* Brand que lleva al home */}
-    <Link to='/' className="text-2xl font-bold">
+    <Link to='/' className="text-2xl font-bold tracking-wide text-primary">
         {title}
     </Link>
 
